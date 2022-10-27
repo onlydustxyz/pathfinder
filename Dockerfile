@@ -97,4 +97,4 @@ ENV PATHFINDER_HTTP_RPC_ADDRESS="0.0.0.0:9545"
 # We use a CMD because heroku container:release duplicate ENTRYPOINT into the
 # command run by the dyno
 ENTRYPOINT []
-CMD ["/usr/bin/tini", "--", "/usr/local/bin/pathfinder"]
+CMD ["/usr/bin/tini", "--", "/usr/local/bin/pathfinder", "--http-rpc 0.0.0.0:$PORT"]
