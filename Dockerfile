@@ -96,4 +96,4 @@ ENV PATHFINDER_HTTP_RPC_ADDRESS="0.0.0.0:9545"
 
 # empty CMD is needed and cannot be --help because otherwise configuring from
 # environment variables only would be impossible and require a workaround.
-CMD ["/usr/local/bin/pathfinder", "--http-rpc 0.0.0.0:$PORT"]
+CMD /usr/local/bin/pathfinder --http-rpc 0.0.0.0:$PORT
